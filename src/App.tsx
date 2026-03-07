@@ -33,8 +33,12 @@ export default function App() {
         
         {/* Trusted By Section */}
         <section className="py-12 border-y border-ink/5 bg-ink/[0.01]">
-          <div className="max-w-7xl mx-auto px-6 flex flex-wrap justify-center md:justify-between items-center gap-12 md:gap-8 opacity-70 transition-all duration-500">
-            {[
+          <div className="max-w-7xl mx-auto px-6">
+            <h3 className="text-center text-sm font-bold uppercase tracking-widest text-ink/40 mb-8">
+              Our trusted partners
+            </h3>
+            <div className="flex flex-wrap justify-center md:justify-between items-center gap-12 md:gap-8 opacity-70 transition-all duration-500">
+              {[
               { name: 'Smappee', url: '/smappee.svg' },
               { name: 'Easee', url: '/easee-logo.svg', customClass: 'h-6 md:h-8' },
               { name: 'Maxeon', url: '/Maxeon_Logo_Tagline_White.png', customClass: 'h-8 md:h-12 invert mix-blend-multiply' }, // Kept invert specifically for the white Maxeon logo so it's visible on light backgrounds, otherwise it disappears.
@@ -56,6 +60,7 @@ export default function App() {
                 }}
               />
             ))}
+            </div>
           </div>
         </section>
 
