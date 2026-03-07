@@ -57,7 +57,12 @@ export const ReferenceProjects = () => {
   return (
     <section id="projects" className="py-24 bg-paper relative">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="flex flex-col items-center text-center mb-16 gap-6">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="flex flex-col items-center text-center mb-16 gap-6"
+        >
           <div className="max-w-2xl">
             <div className="text-kinetic font-bold uppercase tracking-widest text-xs mb-4">Portfolio</div>
             <h2 className="text-5xl md:text-6xl font-bold tracking-tighter text-ink">
@@ -65,11 +70,11 @@ export const ReferenceProjects = () => {
               <span className="text-kinetic glow-text italic">PROJECTS</span>
             </h2>
           </div>
-          <button className="group flex items-center gap-2 text-kinetic font-bold uppercase tracking-widest text-sm hover:text-kinetic-dark transition-colors">
+          <button className="group flex items-center gap-2 text-kinetic font-bold uppercase tracking-widest text-sm hover:text-kinetic-dark transition-colors border border-kinetic/20 rounded-full px-6 py-2 hover:bg-kinetic/5">
             View All Projects
-            <ArrowUpRight size={20} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+            <ArrowUpRight size={16} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
           </button>
-        </div>
+        </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, i) => (

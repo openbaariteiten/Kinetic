@@ -72,7 +72,7 @@ export default function App() {
 
         {/* CTA Section */}
         <section className="py-24 relative overflow-hidden">
-          <div className="absolute inset-0 bg-kinetic/10 blur-[120px] rounded-full -translate-y-1/2" />
+          <div className="absolute inset-0 bg-kinetic/10 blur-[120px] rounded-full -translate-y-1/2 animate-spin-slow origin-center" />
           <div className="max-w-7xl mx-auto px-6 relative z-10">
             <div className="glass p-12 md:p-24 rounded-[3rem] text-center border-kinetic/10 shadow-xl shadow-kinetic/5">
               <h2 className="text-5xl md:text-7xl font-bold tracking-tighter mb-8 leading-tight">

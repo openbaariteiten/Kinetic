@@ -4,14 +4,15 @@ import { Factory, Home, Zap, BarChart3, Settings, ShieldCheck } from 'lucide-rea
 
 const SectorCard = ({ icon: Icon, title, description, items, isDark = false }: any) => (
   <motion.div
-    whileHover={{ y: -10 }}
-    className={`p-8 rounded-3xl border transition-all ${
+    whileHover={{ y: -10, scale: 1.02 }}
+    transition={{ type: "spring", stiffness: 300, damping: 20 }}
+    className={`p-8 rounded-3xl border transition-all duration-300 ${
       isDark 
-        ? 'bg-kinetic-light/20 border-kinetic/30 text-ink' 
-        : 'glass text-ink hover:border-kinetic/30'
+        ? 'bg-kinetic-light/20 border-kinetic/30 text-ink shadow-[0_10px_30px_rgba(223,180,36,0.1)]' 
+        : 'glass text-ink hover:border-kinetic/30 shadow-sm hover:shadow-lg'
     }`}
   >
-    <div className={`w-14 h-14 rounded-2xl flex items-center justify-center mb-6 shadow-sm ${
+    <div className={`w-14 h-14 rounded-2xl flex items-center justify-center mb-6 shadow-sm group-hover:rotate-12 transition-transform duration-300 ${
       isDark ? 'bg-kinetic text-white shadow-kinetic/20' : 'bg-kinetic/10 text-kinetic-dark'
     }`}>
       <Icon size={28} />

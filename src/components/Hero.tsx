@@ -9,8 +9,8 @@ export const Hero = ({ audience }: { audience: 'commercial' | 'private' }) => {
     <section className="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 z-0 bg-paper">
-        <div className="absolute top-1/4 -left-20 w-96 h-96 bg-kinetic/10 rounded-full blur-[120px]" />
-        <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-kinetic/5 rounded-full blur-[120px]" />
+        <div className="absolute top-1/4 -left-20 w-96 h-96 bg-kinetic/10 rounded-[40%_60%_70%_30%/40%_50%_60%_50%] blur-[100px] animate-spin-slow" />
+        <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-kinetic-dark/10 rounded-[60%_40%_30%_70%/60%_30%_70%_40%] blur-[100px] animate-pulse-slow" style={{ animationDelay: '-4s' }} />
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-5" />
       </div>
 
