@@ -77,9 +77,9 @@ export const Hero = ({ audience }: { audience: 'commercial' | 'private' }) => {
             className="relative"
           >
             <div className="relative aspect-square rounded-[3rem] overflow-hidden border border-ink/5 shadow-2xl">
-              <img
-                src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&q=80&w=1000"
-                alt="Energy Infrastructure"
+                <img
+                src="https://images.unsplash.com/photo-1592833159155-c62df1b65634?auto=format&fit=crop&q=80&w=1000"
+                alt="Solar Panel Installation"
                 className="w-full h-full object-cover grayscale-0 hover:scale-105 transition-all duration-700"
                 referrerPolicy="no-referrer"
               />
