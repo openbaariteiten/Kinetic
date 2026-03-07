@@ -72,6 +72,22 @@ export const Navbar = ({ audience, setAudience }: { audience: 'commercial' | 'pr
           animate={{ opacity: 1, y: 0 }}
           className="md:hidden absolute top-24 left-6 right-6 glass rounded-2xl p-6 flex flex-col gap-4"
         >
+          {/* Mobile Audience Toggle */}
+          <div className="flex bg-white/5 rounded-xl p-1 border border-white/10 mb-2">
+            <button 
+              onClick={() => { setAudience('commercial'); setIsOpen(false); }}
+              className={`flex-1 py-2 rounded-lg text-sm font-bold uppercase tracking-wider transition-all ${audience === 'commercial' ? 'bg-volt text-ink shadow-[0_0_15px_rgba(212,255,94,0.3)]' : 'text-white/50 hover:text-white'}`}
+            >
+              Commercial
+            </button>
+            <button 
+              onClick={() => { setAudience('private'); setIsOpen(false); }}
+              className={`flex-1 py-2 rounded-lg text-sm font-bold uppercase tracking-wider transition-all ${audience === 'private' ? 'bg-volt text-ink shadow-[0_0_15px_rgba(212,255,94,0.3)]' : 'text-white/50 hover:text-white'}`}
+            >
+              Private
+            </button>
+          </div>
+
           {['Solutions', 'Sectors', 'About', 'Contact'].map((item) => (
             <a
               key={item}
