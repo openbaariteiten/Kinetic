@@ -38,10 +38,10 @@ export const Hero = ({ audience }: { audience: 'commercial' | 'private' }) => {
               </>
             )}
           </h1>
-          <p className="text-xl text-ink/70 max-w-lg mb-10 leading-relaxed">
+          <p className="text-xl text-ink/70 max-w-lg mb-10 leading-relaxed font-medium">
             {isPrivate 
               ? "Take control of your energy future. We design and install premium home battery systems, smart EV chargers, and solar solutions tailored for modern living."
-              : "Voltspark is evolving from a traditional installer to a strategic partner in the energy transition. We empower industries and homes with sustainable infrastructure."}
+              : "Kinetic is evolving from a traditional installer to a strategic partner in the energy transition. We empower industries and homes with sustainable infrastructure."}
           </p>
           
           <div className="flex flex-wrap gap-4">

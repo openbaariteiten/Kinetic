@@ -27,28 +27,28 @@ export const Subsidiaries = () => {
             <span className="text-ink/40">SPECIALIZATION</span>
           </h2>
           <p className="text-ink/60 max-w-2xl mx-auto font-medium">
-            Voltspark operates through a network of specialized entities, each a leader in their respective niche of the energy sector.
+            Kinetic operates through a network of specialized entities, each a leader in their respective niche of the energy sector.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           <Subsidiary
-            name="Voltspark Infra"
+            name="Kinetic Infra"
             description="Specializing in high-voltage industrial grid connections and heavy infrastructure projects."
             icon={Network}
           />
           <Subsidiary
-            name="Voltspark Solar"
+            name="Kinetic Solar"
             description="Leading the transition with advanced solar PV systems for residential and commercial markets."
             icon={Sun}
           />
           <Subsidiary
-            name="Voltspark Batteries"
+            name="Kinetic Batteries"
             description="Next-generation energy storage solutions to ensure power stability and independence."
             icon={Battery}
           />
           <Subsidiary
-            name="Voltspark Intelligence"
+            name="Kinetic Intelligence"
             description="AI-driven energy management systems and strategic consulting for optimal efficiency."
             icon={Brain}
           />

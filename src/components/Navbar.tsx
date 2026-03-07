@@ -4,19 +4,20 @@ import { Menu, X } from 'lucide-react';
 
 export const Logo = () => (
   <div className="flex items-center gap-2 group cursor-pointer">
-    <div className="relative w-12 h-12 flex items-center justify-center">
-      <svg 
-        viewBox="0 0 100 100" 
-        className="w-full h-full drop-shadow-[0_0_8px_rgba(255,87,34,0.4)]"
-      >
-        <path 
-          d="M 5 20 L 25 20 L 50 70 L 62.5 45 L 50 45 L 90 5 L 75 40 L 85 40 L 60 90 L 40 90 Z" 
-          fill="#FF5722" 
-        />
-      </svg>
-    </div>
-    <span className="font-display font-bold text-2xl tracking-tighter text-ink group-hover:text-kinetic transition-colors uppercase">
-      Voltspark
+    {/* We use an img tag to load the attached logo the user provided. 
+        It expects the logo to be saved in the public directory as kinetic-logo.png */}
+    <img 
+      src="/kinetic-logo.png" 
+      alt="Kinetic Logo" 
+      className="h-8 md:h-10 w-auto object-contain transition-transform group-hover:scale-105"
+      onError={(e) => {
+        // Fallback if the user hasn't saved the image yet
+        e.currentTarget.style.display = 'none';
+        e.currentTarget.nextElementSibling?.classList.remove('hidden');
+      }}
+    />
+    <span className="hidden font-display font-bold text-2xl tracking-tighter text-kinetic uppercase drop-shadow-sm">
+      KINETIC
     </span>
   </div>
 );
@@ -34,13 +35,13 @@ export const Navbar = ({ audience, setAudience }: { audience: 'commercial' | 'pr
           <div className="flex bg-ink/5 rounded-full p-1 border border-ink/10">
             <button 
               onClick={() => setAudience('commercial')}
-              className={`px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all ${audience === 'commercial' ? 'bg-kinetic text-white shadow-[0_0_10px_rgba(255,87,34,0.3)]' : 'text-ink/50 hover:text-ink'}`}
+              className={`px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all ${audience === 'commercial' ? 'bg-kinetic text-white shadow-[0_0_10px_rgba(223,180,36,0.3)]' : 'text-ink/50 hover:text-ink'}`}
             >
               Commercial
             </button>
             <button 
               onClick={() => setAudience('private')}
-              className={`px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all ${audience === 'private' ? 'bg-kinetic text-white shadow-[0_0_10px_rgba(255,87,34,0.3)]' : 'text-ink/50 hover:text-ink'}`}
+              className={`px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all ${audience === 'private' ? 'bg-kinetic text-white shadow-[0_0_10px_rgba(223,180,36,0.3)]' : 'text-ink/50 hover:text-ink'}`}
             >
               Private
             </button>
@@ -76,13 +77,13 @@ export const Navbar = ({ audience, setAudience }: { audience: 'commercial' | 'pr
           <div className="flex bg-ink/5 rounded-xl p-1 border border-ink/10 mb-2">
             <button 
               onClick={() => { setAudience('commercial'); setIsOpen(false); }}
-              className={`flex-1 py-2 rounded-lg text-sm font-bold uppercase tracking-wider transition-all ${audience === 'commercial' ? 'bg-kinetic text-white shadow-[0_0_10px_rgba(255,87,34,0.3)]' : 'text-ink/50 hover:text-ink'}`}
+              className={`flex-1 py-2 rounded-lg text-sm font-bold uppercase tracking-wider transition-all ${audience === 'commercial' ? 'bg-kinetic text-white shadow-[0_0_10px_rgba(223,180,36,0.3)]' : 'text-ink/50 hover:text-ink'}`}
             >
               Commercial
             </button>
             <button 
               onClick={() => { setAudience('private'); setIsOpen(false); }}
-              className={`flex-1 py-2 rounded-lg text-sm font-bold uppercase tracking-wider transition-all ${audience === 'private' ? 'bg-kinetic text-white shadow-[0_0_10px_rgba(255,87,34,0.3)]' : 'text-ink/50 hover:text-ink'}`}
+              className={`flex-1 py-2 rounded-lg text-sm font-bold uppercase tracking-wider transition-all ${audience === 'private' ? 'bg-kinetic text-white shadow-[0_0_10px_rgba(223,180,36,0.3)]' : 'text-ink/50 hover:text-ink'}`}
             >
               Private
             </button>
