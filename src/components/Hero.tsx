@@ -77,31 +77,50 @@ export const Hero = ({ audience }: { audience: 'commercial' | 'private' }) => {
             transition={{ duration: 1, delay: 0.2 }}
             className="relative order-first lg:order-first"
           >
-            <div className="relative aspect-square rounded-[3rem] overflow-hidden border border-ink/5 shadow-2xl">
-                <img
-                src="https://images.unsplash.com/photo-1592833159155-c62df1b65634?auto=format&fit=crop&q=80&w=1000"
-                alt="Solar Panel Installation"
-                className="w-full h-full object-cover grayscale-0 hover:scale-105 transition-all duration-700"
-                referrerPolicy="no-referrer"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-              
-              <div className="absolute bottom-8 left-8 right-8 bg-white/90 backdrop-blur-md p-6 rounded-2xl border border-white shadow-xl">
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full bg-kinetic flex items-center justify-center text-white shadow-md shadow-kinetic/30">
-                    <Shield size={24} />
+            <motion.div
+              animate={{ y: [0, -15, 0] }}
+              transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+            >
+              <div className="relative aspect-square rounded-[3rem] overflow-hidden border border-ink/5 shadow-2xl">
+                  <motion.img
+                  src="https://images.unsplash.com/photo-1592833159155-c62df1b65634?auto=format&fit=crop&q=80&w=1000"
+                  alt="Solar Panel Installation"
+                  animate={{ scale: [1, 1.08, 1] }}
+                  transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
+                  className="w-full h-full object-cover grayscale-0"
+                  referrerPolicy="no-referrer"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                
+                <motion.div 
+                  animate={{ y: [0, -10, 0] }}
+                  transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+                  className="absolute bottom-8 left-8 right-8 bg-white/90 backdrop-blur-md p-6 rounded-2xl border border-white shadow-xl"
+                >
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 rounded-full bg-kinetic flex items-center justify-center text-white shadow-md shadow-kinetic/30">
+                      <Shield size={24} />
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-lg text-ink">Reliable Infrastructure</h3>
+                      <p className="text-sm text-ink/70">Built for the next generation.</p>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="font-bold text-lg text-ink">Reliable Infrastructure</h3>
-                    <p className="text-sm text-ink/70">Built for the next generation.</p>
-                  </div>
-                </div>
+                </motion.div>
               </div>
-            </div>
-            
-            {/* Decorative Elements */}
-            <div className="absolute -top-6 -right-6 w-32 h-32 border-t-2 border-r-2 border-kinetic/30 rounded-tr-[3rem]" />
-            <div className="absolute -bottom-6 -left-6 w-32 h-32 border-b-2 border-l-2 border-kinetic/30 rounded-bl-[3rem]" />
+              
+              {/* Decorative Elements */}
+              <motion.div 
+                animate={{ y: [0, -15, 0], x: [0, 10, 0] }}
+                transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
+                className="absolute -top-6 -right-6 w-32 h-32 border-t-2 border-r-2 border-kinetic/30 rounded-tr-[3rem] -z-10" 
+              />
+              <motion.div 
+                animate={{ y: [0, 15, 0], x: [0, -10, 0] }}
+                transition={{ duration: 8, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+                className="absolute -bottom-6 -left-6 w-32 h-32 border-b-2 border-l-2 border-kinetic/30 rounded-bl-[3rem] -z-10" 
+              />
+            </motion.div>
           </motion.div>
       </div>
     </section>
