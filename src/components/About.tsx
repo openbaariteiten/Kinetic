@@ -7,7 +7,7 @@ export const About = () => {
     <section id="about" className="py-24 relative">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <div className="relative">
+          <div className="relative order-first lg:order-last">
             <div className="aspect-[4/5] rounded-3xl overflow-hidden grayscale">
               <img
                 src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&q=80&w=1000"
@@ -27,7 +27,7 @@ export const About = () => {
             </div>
           </div>
 
-          <div>
+          <div className="order-last lg:order-first">
             <div className="text-kinetic font-bold uppercase tracking-widest text-xs mb-4">Our Story</div>
             <h2 className="text-5xl md:text-6xl font-bold tracking-tighter mb-8 leading-[0.9] text-ink">
               EVOLVING INTO A <br />

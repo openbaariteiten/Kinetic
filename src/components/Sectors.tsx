@@ -35,15 +35,15 @@ export const Sectors = () => {
   return (
     <section id="sectors" className="py-24 bg-paper relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
+        <div className="flex flex-col items-center text-center mb-16 gap-6">
           <div className="max-w-2xl">
             <div className="text-kinetic font-bold uppercase tracking-widest text-xs mb-4">Market Focus</div>
             <h2 className="text-5xl md:text-6xl font-bold tracking-tighter text-ink">
               SERVING THE ENTIRE <br />
-              <span className="text-ink/40">ENERGY ECOSYSTEM</span>
+              <span className="text-kinetic glow-text italic">ENERGY ECOSYSTEM</span>
             </h2>
           </div>
-          <p className="text-ink/60 max-w-sm">
+          <p className="text-ink/60 max-w-lg font-medium">
             From heavy industrial installations to residential smart homes, we provide the backbone for the energy transition.
           </p>
         </div>

@@ -57,12 +57,12 @@ export const ReferenceProjects = () => {
   return (
     <section id="projects" className="py-24 bg-paper relative">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
+        <div className="flex flex-col items-center text-center mb-16 gap-6">
           <div className="max-w-2xl">
             <div className="text-kinetic font-bold uppercase tracking-widest text-xs mb-4">Portfolio</div>
             <h2 className="text-5xl md:text-6xl font-bold tracking-tighter text-ink">
               REFERENCE <br />
-              <span className="text-ink/40">PROJECTS</span>
+              <span className="text-kinetic glow-text italic">PROJECTS</span>
             </h2>
           </div>
           <button className="group flex items-center gap-2 text-kinetic font-bold uppercase tracking-widest text-sm hover:text-kinetic-dark transition-colors">

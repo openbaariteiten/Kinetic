@@ -20,6 +20,7 @@ export const Hero = ({ audience }: { audience: 'commercial' | 'private' }) => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           key={audience} // Re-animate when audience changes
+          className="order-last lg:order-last"
         >
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-kinetic/30 bg-kinetic/10 text-kinetic-dark text-xs font-bold uppercase tracking-widest mb-6">
             <Zap size={14} />
@@ -74,7 +75,7 @@ export const Hero = ({ audience }: { audience: 'commercial' | 'private' }) => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.2 }}
-            className="relative"
+            className="relative order-first lg:order-first"
           >
             <div className="relative aspect-square rounded-[3rem] overflow-hidden border border-ink/5 shadow-2xl">
                 <img
