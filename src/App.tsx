@@ -33,11 +33,11 @@ export default function App() {
         
         {/* Trusted By Section */}
         <section className="py-12 border-y border-ink/5 bg-ink/[0.01]">
-          <div className="max-w-7xl mx-auto px-6 flex flex-wrap justify-center md:justify-between items-center gap-12 md:gap-8 opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
+          <div className="max-w-7xl mx-auto px-6 flex flex-wrap justify-center md:justify-between items-center gap-12 md:gap-8 opacity-70 transition-all duration-500">
             {[
               { name: 'Smappee', url: '/smappee.svg' },
               { name: 'Easee', url: '/easee-logo.svg', customClass: 'h-6 md:h-8' },
-              { name: 'Maxeon', url: '/Maxeon_Logo_Tagline_White.png' },
+              { name: 'Maxeon', url: '/Maxeon_Logo_Tagline_White.png', customClass: 'h-8 md:h-12 invert mix-blend-multiply' }, // Kept invert specifically for the white Maxeon logo so it's visible on light backgrounds, otherwise it disappears.
               { name: 'Huawei', url: '/Huawei_Standard_logo.svg.png' },
               { name: 'Dyness', url: '/dyness-logo.png' }
             ].map((brand) => (
@@ -45,7 +45,7 @@ export default function App() {
                 key={brand.name} 
                 src={brand.url} 
                 alt={`${brand.name} Logo`}
-                className={`${brand.customClass || 'h-8 md:h-12'} object-contain invert mix-blend-multiply opacity-80`}
+                className={`${brand.customClass || 'h-8 md:h-12'} object-contain opacity-80`}
                 onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {
                   /* Fallback to text if the image still fails */
                   const target = e.currentTarget;
