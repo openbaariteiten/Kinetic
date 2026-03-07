@@ -7,23 +7,23 @@ const SectorCard = ({ icon: Icon, title, description, items, isDark = false }: a
     whileHover={{ y: -10 }}
     className={`p-8 rounded-3xl border transition-all ${
       isDark 
-        ? 'bg-volt border-volt text-ink' 
-        : 'bg-white/5 border-white/10 text-white hover:border-volt/30'
+        ? 'bg-kinetic-light/20 border-kinetic/30 text-ink' 
+        : 'glass text-ink hover:border-kinetic/30'
     }`}
   >
-    <div className={`w-14 h-14 rounded-2xl flex items-center justify-center mb-6 ${
-      isDark ? 'bg-ink text-volt' : 'bg-volt text-ink'
+    <div className={`w-14 h-14 rounded-2xl flex items-center justify-center mb-6 shadow-sm ${
+      isDark ? 'bg-kinetic text-white shadow-kinetic/20' : 'bg-kinetic/10 text-kinetic-dark'
     }`}>
       <Icon size={28} />
     </div>
     <h3 className="text-3xl font-bold mb-4 tracking-tight">{title}</h3>
-    <p className={`mb-8 leading-relaxed ${isDark ? 'text-ink/70' : 'text-white/60'}`}>
+    <p className={`mb-8 leading-relaxed ${isDark ? 'text-ink/80' : 'text-ink/70'}`}>
       {description}
     </p>
     <ul className="space-y-3">
       {items.map((item: string, i: number) => (
         <li key={i} className="flex items-center gap-3 text-sm font-medium">
-          <div className={`w-1.5 h-1.5 rounded-full ${isDark ? 'bg-ink' : 'bg-volt'}`} />
+          <div className={`w-1.5 h-1.5 rounded-full ${isDark ? 'bg-kinetic-dark' : 'bg-kinetic'}`} />
           {item}
         </li>
       ))}
@@ -33,17 +33,17 @@ const SectorCard = ({ icon: Icon, title, description, items, isDark = false }: a
 
 export const Sectors = () => {
   return (
-    <section id="sectors" className="py-24 bg-ink relative overflow-hidden">
+    <section id="sectors" className="py-24 bg-paper relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
           <div className="max-w-2xl">
-            <div className="text-volt font-bold uppercase tracking-widest text-xs mb-4">Market Focus</div>
-            <h2 className="text-5xl md:text-6xl font-bold tracking-tighter">
+            <div className="text-kinetic font-bold uppercase tracking-widest text-xs mb-4">Market Focus</div>
+            <h2 className="text-5xl md:text-6xl font-bold tracking-tighter text-ink">
               SERVING THE ENTIRE <br />
-              <span className="text-white/40">ENERGY ECOSYSTEM</span>
+              <span className="text-ink/40">ENERGY ECOSYSTEM</span>
             </h2>
           </div>
-          <p className="text-white/50 max-w-sm">
+          <p className="text-ink/60 max-w-sm">
             From heavy industrial installations to residential smart homes, we provide the backbone for the energy transition.
           </p>
         </div>
@@ -81,8 +81,8 @@ export const Sectors = () => {
             { icon: Settings, label: "Custom Engineering" },
             { icon: ShieldCheck, label: "Certified Safety" }
           ].map((feature, i) => (
-            <div key={i} className="glass p-6 rounded-2xl flex flex-col items-center text-center gap-4 hover:border-volt/50 transition-colors">
-              <feature.icon className="text-volt" size={32} />
+            <div key={i} className="glass text-ink p-6 rounded-2xl flex flex-col items-center text-center gap-4 hover:border-kinetic/50 transition-colors shadow-sm">
+              <feature.icon className="text-kinetic" size={32} />
               <span className="font-bold text-sm uppercase tracking-wider">{feature.label}</span>
             </div>
           ))}

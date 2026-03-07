@@ -55,17 +55,17 @@ const projects = [
 
 export const ReferenceProjects = () => {
   return (
-    <section id="projects" className="py-24 bg-ink relative">
+    <section id="projects" className="py-24 bg-paper relative">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
           <div className="max-w-2xl">
-            <div className="text-volt font-bold uppercase tracking-widest text-xs mb-4">Portfolio</div>
-            <h2 className="text-5xl md:text-6xl font-bold tracking-tighter">
+            <div className="text-kinetic font-bold uppercase tracking-widest text-xs mb-4">Portfolio</div>
+            <h2 className="text-5xl md:text-6xl font-bold tracking-tighter text-ink">
               REFERENCE <br />
-              <span className="text-white/40">PROJECTS</span>
+              <span className="text-ink/40">PROJECTS</span>
             </h2>
           </div>
-          <button className="group flex items-center gap-2 text-volt font-bold uppercase tracking-widest text-sm hover:text-white transition-colors">
+          <button className="group flex items-center gap-2 text-kinetic font-bold uppercase tracking-widest text-sm hover:text-kinetic-dark transition-colors">
             View All Projects
             <ArrowUpRight size={20} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
           </button>
@@ -79,7 +79,7 @@ export const ReferenceProjects = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="group relative flex flex-col h-full glass rounded-3xl overflow-hidden border-white/5 hover:border-volt/30 transition-all"
+              className="group relative flex flex-col h-full glass rounded-3xl overflow-hidden border-ink/5 hover:border-kinetic/30 transition-all shadow-sm"
             >
               <div className="relative h-64 overflow-hidden">
                 <img
@@ -89,30 +89,30 @@ export const ReferenceProjects = () => {
                   referrerPolicy="no-referrer"
                 />
                 <div className="absolute top-4 left-4">
-                  <div className="px-3 py-1 rounded-full bg-ink/80 backdrop-blur-md border border-white/10 text-volt text-[10px] font-bold uppercase tracking-widest flex items-center gap-2">
+                  <div className="px-3 py-1 rounded-full bg-white/90 backdrop-blur-md border border-ink/10 text-kinetic-dark text-[10px] font-bold uppercase tracking-widest flex items-center gap-2 shadow-sm">
                     <project.icon size={12} />
                     {project.category}
                   </div>
                 </div>
               </div>
 
-              <div className="p-8 flex flex-col flex-grow">
+              <div className="p-8 flex flex-col flex-grow text-ink">
                 <div className="flex justify-between items-start mb-4">
-                  <h3 className="text-2xl font-bold tracking-tight group-hover:text-volt transition-colors">
+                  <h3 className="text-2xl font-bold tracking-tight group-hover:text-kinetic transition-colors">
                     {project.title}
                   </h3>
-                  <ArrowUpRight size={20} className="text-white/20 group-hover:text-volt transition-colors" />
+                  <ArrowUpRight size={20} className="text-ink/20 group-hover:text-kinetic transition-colors" />
                 </div>
-                <p className="text-white/50 text-sm leading-relaxed mb-8 flex-grow">
+                <p className="text-ink/60 text-sm leading-relaxed mb-8 flex-grow font-medium">
                   {project.description}
                 </p>
                 
-                <div className="pt-6 border-t border-white/5 flex items-center justify-between">
+                <div className="pt-6 border-t border-ink/10 flex items-center justify-between">
                   <div>
-                    <div className="text-2xl font-bold text-white">{project.stats.value}</div>
-                    <div className="text-[10px] text-white/30 uppercase tracking-widest font-bold">{project.stats.label}</div>
+                    <div className="text-2xl font-bold text-ink">{project.stats.value}</div>
+                    <div className="text-[10px] text-ink/40 uppercase tracking-widest font-bold">{project.stats.label}</div>
                   </div>
-                  <div className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white/20 group-hover:border-volt/30 group-hover:text-volt transition-all">
+                  <div className="w-10 h-10 rounded-full border border-ink/10 flex items-center justify-center text-ink/20 group-hover:border-kinetic/30 group-hover:text-kinetic group-hover:bg-kinetic/5 transition-all">
                     <Zap size={16} />
                   </div>
                 </div>

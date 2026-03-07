@@ -16,11 +16,11 @@ export const About = () => {
                 referrerPolicy="no-referrer"
               />
             </div>
-            <div className="absolute -bottom-10 -right-10 w-64 h-64 bg-volt rounded-3xl p-8 flex flex-col justify-between text-ink hidden md:flex">
+            <div className="absolute -bottom-10 -right-10 w-64 h-64 bg-kinetic rounded-[3rem] p-8 flex flex-col justify-between text-white hidden md:flex shadow-2xl shadow-kinetic/20">
               <div className="text-5xl font-bold tracking-tighter italic">15+</div>
               <div>
                 <div className="font-bold text-xl mb-1">Years of Evolution</div>
-                <p className="text-sm font-medium opacity-70 leading-tight">
+                <p className="text-sm font-medium opacity-90 leading-tight text-white/90">
                   From traditional installers to strategic energy partners.
                 </p>
               </div>
@@ -28,14 +28,14 @@ export const About = () => {
           </div>
 
           <div>
-            <div className="text-volt font-bold uppercase tracking-widest text-xs mb-4">Our Story</div>
-            <h2 className="text-5xl md:text-6xl font-bold tracking-tighter mb-8 leading-[0.9]">
+            <div className="text-kinetic font-bold uppercase tracking-widest text-xs mb-4">Our Story</div>
+            <h2 className="text-5xl md:text-6xl font-bold tracking-tighter mb-8 leading-[0.9] text-ink">
               EVOLVING INTO A <br />
-              <span className="text-volt glow-text italic">STRATEGIC PARTNER</span>
+              <span className="text-kinetic glow-text italic">STRATEGIC PARTNER</span>
             </h2>
-            <div className="space-y-6 text-white/60 text-lg leading-relaxed">
+            <div className="space-y-6 text-ink/70 text-lg leading-relaxed font-medium">
               <p>
-                Voltspark is an ambitious, growing organisation active in the energy transition and infrastructure sector. We don't just install; we strategize, design, and maintain the energy systems of tomorrow.
+                Kinetic is an ambitious, growing organisation active in the energy transition and infrastructure sector. We don't just install; we strategize, design, and maintain the energy systems of tomorrow.
               </p>
               <p>
                 Through our specialized network, we serve a diverse portfolio of clients. Our mission is to bridge the gap between traditional energy infrastructure and the sustainable future.
@@ -49,10 +49,10 @@ export const About = () => {
                 "Full-Lifecycle Support",
                 "Innovation Driven"
               ].map((item, i) => (
-                <div key={i} className="flex items-center gap-3 p-4 rounded-xl border border-white/10 hover:border-volt/30 transition-colors group cursor-default">
-                  <div className="w-2 h-2 rounded-full bg-volt" />
-                  <span className="font-bold text-sm uppercase tracking-wider">{item}</span>
-                  <ArrowUpRight size={16} className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity text-volt" />
+                <div key={i} className="flex items-center gap-3 p-4 rounded-xl border border-ink/10 hover:border-kinetic/30 bg-white/40 hover:bg-white transition-colors group cursor-default shadow-sm">
+                  <div className="w-2 h-2 rounded-full bg-kinetic" />
+                  <span className="font-bold text-sm uppercase tracking-wider text-ink">{item}</span>
+                  <ArrowUpRight size={16} className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity text-kinetic" />
                 </div>
               ))}
             </div>
