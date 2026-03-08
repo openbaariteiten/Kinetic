@@ -42,7 +42,7 @@ export const Hero = ({ audience }: { audience: 'commercial' | 'private' }) => {
           <p className="text-xl text-ink/70 max-w-lg mb-10 leading-relaxed font-medium">
             {isPrivate 
               ? "Take control of your energy future. We design and install premium home battery systems, smart EV chargers, and solar solutions tailored for modern living."
-              : "Kinetic is evolving from a traditional installer to a strategic partner in the energy transition. We empower industries and homes with sustainable infrastructure."}
+              : "Cura Energy is evolving from a traditional installer to a strategic partner in the energy transition. We empower industries and homes with sustainable infrastructure."}
           </p>
           
           <div className="flex flex-wrap gap-4">
@@ -84,7 +84,7 @@ export const Hero = ({ audience }: { audience: 'commercial' | 'private' }) => {
               className="w-full h-full object-cover grayscale-0 group-hover:scale-105 transition-transform duration-700 ease-out"
               referrerPolicy="no-referrer"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent group-hover:from-black/70 transition-colors duration-700" />
+            <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-transparent to-transparent group-hover:from-ink transition-colors duration-700 pointer-events-none" />
             
             <div className="absolute bottom-8 left-8 right-8 bg-white/90 backdrop-blur-md p-6 rounded-2xl border border-white shadow-xl group-hover:-translate-y-2 transition-transform duration-500">
               <div className="flex items-center gap-4">

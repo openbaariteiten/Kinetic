@@ -79,8 +79,8 @@ export default function App() {
                 READY TO POWER THE <br />
                 <span className="text-kinetic glow-text italic">NEXT GENERATION?</span>
               </h2>
-              <p className="text-xl text-ink/70 max-w-2xl mx-auto mb-12">
-                Join forces with Kinetic and lead the energy transition. Whether you're an industrial giant or a homeowner, we have the strategy for you.
+              <p className="text-xl text-ink/70 mb-10 shadow-sm">
+                Join forces with Cura Energy and lead the energy transition. Whether you're an industrial giant or a homeowner, we have the strategy for you.
               </p>
               <div className="flex flex-wrap justify-center gap-6">
                 <button className="bg-kinetic text-white px-10 py-5 rounded-full font-bold text-lg hover:bg-kinetic-dark transition-all hover:scale-105 shadow-lg shadow-kinetic/20">

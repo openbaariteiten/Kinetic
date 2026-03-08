@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Shield, Zap, Cpu, Network, Battery, Sun, Brain } from 'lucide-react';
+import { Shield, Zap, Cpu, Network, Battery, Sun, Brain, Building2 } from 'lucide-react';
 
 const Subsidiary = ({ name, description, icon: Icon, delay }: any) => (
   <motion.div 
@@ -38,33 +38,33 @@ export const Subsidiaries = () => {
             <span className="text-kinetic glow-text italic">SPECIALIZATION</span>
           </h2>
           <p className="text-ink/60 max-w-2xl mx-auto font-medium">
-            Kinetic operates through a network of specialized entities, each a leader in their respective niche of the energy sector.
+            Cura Energy operates through a network of specialized entities, each a leader in their respective niche of the energy sector.
           </p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <Subsidiary
-            name="Kinetic Infra"
-            description="Specializing in high-voltage industrial grid connections and heavy infrastructure projects."
-            icon={Network}
+          <Subsidiary 
+            icon={Building2} 
+            name="Cura Infra" 
+            description="Large-scale renewable infrastructure and commercial energy systems."
             delay={0.1}
           />
           <Subsidiary
-            name="Kinetic Solar"
+            name="Cura Solar"
             description="Leading the transition with advanced solar PV systems for residential and commercial markets."
             icon={Sun}
             delay={0.2}
           />
-          <Subsidiary
-            name="Kinetic Batteries"
-            description="Next-generation energy storage solutions to ensure power stability and independence."
-            icon={Battery}
+          <Subsidiary 
+            icon={Battery} 
+            name="Cura Batteries" 
+            description="Industrial-scale energy storage and grid balancing."
             delay={0.3}
           />
-          <Subsidiary
-            name="Kinetic Intelligence"
-            description="AI-driven energy management systems and strategic consulting for optimal efficiency."
-            icon={Brain}
+          <Subsidiary 
+            icon={Cpu} 
+            name="Cura Intelligence" 
+            description="Smart grid software and energy management systems."
             delay={0.4}
           />
         </div>

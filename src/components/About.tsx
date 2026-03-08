@@ -8,12 +8,11 @@ export const About = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="relative order-first lg:order-last">
-            <div className="aspect-[4/5] rounded-3xl overflow-hidden grayscale">
+            <div className="aspect-[4/3] rounded-3xl overflow-hidden glass p-2">
               <img
-                src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&q=80&w=1000"
-                alt="Wind Turbines"
-                className="w-full h-full object-cover"
-                referrerPolicy="no-referrer"
+                src="https://www.batimont.be/sites/default/files/references/2024-09/Batimont%20Valcke%20Ieper-5-min.jpg"
+                alt="Cura Energy Installation"
+                className="w-full h-full object-cover rounded-2xl grayscale-0"
               />
             </div>
             <div className="absolute -bottom-10 -right-10 w-64 h-64 bg-kinetic rounded-[3rem] p-8 flex flex-col justify-between text-white hidden md:flex shadow-2xl shadow-kinetic/20">
@@ -33,14 +32,12 @@ export const About = () => {
               EVOLVING INTO A <br />
               <span className="text-kinetic glow-text italic">STRATEGIC PARTNER</span>
             </h2>
-            <div className="space-y-6 text-ink/70 text-lg leading-relaxed font-medium">
-              <p>
-                Kinetic is an ambitious, growing organisation active in the energy transition and infrastructure sector. We don't just install; we strategize, design, and maintain the energy systems of tomorrow.
+            <p className="text-ink/70 text-lg leading-relaxed mb-6 font-medium">
+                Cura Energy is an ambitious, growing organisation active in the energy transition and infrastructure sector. We don't just install; we strategize, design, and maintain the energy systems of tomorrow.
               </p>
-              <p>
+              <p className="text-ink/70 text-lg leading-relaxed font-medium">
                 Through our specialized network, we serve a diverse portfolio of clients. Our mission is to bridge the gap between traditional energy infrastructure and the sustainable future.
               </p>
-            </div>
 
             <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-4">
               {[
