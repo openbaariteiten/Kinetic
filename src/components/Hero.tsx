@@ -87,15 +87,23 @@ export const Hero = ({ audience }: { audience: 'commercial' | 'private' }) => {
 
             {/* Bottom Left Block: Battery */}
             <div className="col-span-1 row-span-1 relative rounded-[2rem] overflow-hidden border border-ink/5 shadow-lg group cursor-pointer">
-              <img
-                src={isPrivate 
-                  ? "https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?auto=format&fit=crop&q=80&w=600" 
-                  : "https://www.energy-storage.news/wp-content/uploads/2024/04/image-1-4.jpg"
-                }
-                alt="Battery Storage"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
-                referrerPolicy="no-referrer"
-              />
+              {isPrivate ? (
+                <video
+                  src="https://nl.dyness.com/Public/Uploads/uploadfile/files/20241127/blcompress-379.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                />
+              ) : (
+                <img
+                  src="https://www.energy-storage.news/wp-content/uploads/2024/04/image-1-4.jpg"
+                  alt="Battery Storage"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                  referrerPolicy="no-referrer"
+                />
+              )}
               <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent pointer-events-none" />
               <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-md px-4 py-2 rounded-xl flex items-center gap-2 shadow-md">
                 <Battery size={18} className="text-kinetic" />
