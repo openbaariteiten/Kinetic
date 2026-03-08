@@ -31,12 +31,12 @@ export const Navbar = ({ audience, setAudience }: { audience: 'commercial' | 'pr
         <div className="flex-shrink-0 flex items-center">
           <a href="#" className="flex items-center gap-3 group">
             <img 
-              src="/cura-logo.jpg" 
-              alt="Cura Energy Logo" 
+              src="/omnis-logo.png" 
+              alt="Omnis Logo" 
               className="h-10 w-auto mix-blend-multiply transition-transform group-hover:scale-105" 
             />
             <span className="font-[system-ui,-apple-system,sans-serif] font-black text-2xl tracking-tighter text-[#1A365D] uppercase mt-1">
-              CURA <span className="font-light tracking-widest text-[#E87A26]">ENERGY</span>
+              OMNIS
             </span>
           </a>
         </div>

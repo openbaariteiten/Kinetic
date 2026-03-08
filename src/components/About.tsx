@@ -11,7 +11,7 @@ export const About = () => {
             <div className="aspect-[4/3] rounded-3xl overflow-hidden glass p-2">
               <img
                 src="https://www.batimont.be/sites/default/files/references/2024-09/Batimont%20Valcke%20Ieper-5-min.jpg"
-                alt="Cura Energy Installation"
+                alt="Omnis Installation"
                 className="w-full h-full object-cover rounded-2xl grayscale-0"
               />
             </div>

@@ -9,8 +9,8 @@ export const Footer = () => {
           <div className="lg:col-span-1">
             <a href="#" className="flex items-center gap-2">
               <img 
-                src="/cura-logo.jpg" 
-                alt="Cura Energy Logo" 
+                src="/omnis-logo.png" 
+                alt="Omnis Logo" 
                 className="h-10 w-auto mix-blend-multiply" 
               />
             </a>
@@ -48,7 +48,7 @@ export const Footer = () => {
             <ul className="space-y-4 font-medium">
               <li className="flex items-center gap-3 text-ink/60">
                 <Mail size={18} className="text-kinetic" />
-                info@cura-energy.be
+                info@omnis.be
               </li>
               <li className="flex items-center gap-3 text-ink/60">
                 <Phone size={18} className="text-kinetic" />
@@ -81,7 +81,7 @@ export const Footer = () => {
         </div>
 
         <div className="border-t border-ink/10 mt-16 pt-8 flex flex-col md:flex-row items-center justify-between text-ink/40 text-sm">
-          <div>© 2026 Cura Energy. Alle rechten voorbehouden.</div>
+          <div>© 2026 Omnis. Alle rechten voorbehouden.</div>
           <div className="flex gap-6 border-b-2 border-transparent">
             <a href="#" className="hover:text-kinetic transition-colors">Privacybeleid</a>
             <a href="#" className="hover:text-kinetic transition-colors">Algemene Voorwaarden</a>

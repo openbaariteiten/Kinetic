@@ -32,13 +32,13 @@ export const Hero = ({ audience }: { audience: 'commercial' | 'private' }) => {
           </h1>
           <p className="text-xl text-ink/70 max-w-lg mb-10 leading-relaxed font-medium">
             {isPrivate 
-              ? "Een duurzaam huis hoeft niet ingewikkeld te zijn. Cura Energy brengt de expertise van de industriële sector naar uw voordeur. Wij nemen het beheer van advies tot installatie."
-              : "Wij installeren niet alleen; wij beheren. Cura Energy is de full-service partner die de complexiteit van de energietransitie uit handen neemt voor bedrijven."}
+              ? "Een duurzaam huis hoeft niet ingewikkeld te zijn. Omnis brengt de expertise van de industriële sector naar uw voordeur. Wij nemen het beheer van advies tot installatie."
+              : "Wij installeren niet alleen; wij beheren. Omnis is de full-service partner die de complexiteit van de energietransitie uit handen neemt voor bedrijven."}
           </p>
           
           <div className="flex flex-wrap gap-4">
             <button className="bg-kinetic text-white px-8 py-4 rounded-full font-bold flex items-center gap-2 hover:bg-kinetic-dark transition-all group shadow-lg shadow-kinetic/20">
-              {isPrivate ? "Cura voor uw woning" : "Ontdek onze zakelijke oplossingen"}
+              {isPrivate ? "Omnis voor uw woning" : "Ontdek onze zakelijke oplossingen"}
               <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
             </button>
             <button className="border border-ink/20 text-ink hover:border-kinetic/50 hover:bg-kinetic/5 px-8 py-4 rounded-full font-bold transition-all">
