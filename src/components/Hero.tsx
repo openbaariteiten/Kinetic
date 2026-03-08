@@ -86,9 +86,9 @@ export const Hero = ({ audience }: { audience: 'commercial' | 'private' }) => {
             </div>
 
             {/* Bottom Left Block: Battery */}
-            <div className="col-span-1 row-span-1 relative rounded-[2rem] overflow-hidden border border-ink/5 shadow-lg group cursor-pointer">
+            <div className="col-span-1 row-span-1 relative rounded-[2rem] overflow-hidden border border-ink/5 shadow-lg group cursor-pointer bg-white">
               <img
-                src="https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?auto=format&fit=crop&q=80&w=600"
+                src="https://microgreen.ca/images/containerized-energy-storage.png"
                 alt="Battery Storage"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                 referrerPolicy="no-referrer"
@@ -101,11 +101,11 @@ export const Hero = ({ audience }: { audience: 'commercial' | 'private' }) => {
             </div>
 
             {/* Bottom Right Block: EV Charging */}
-            <div className="col-span-1 row-span-1 relative rounded-[2rem] overflow-hidden border border-ink/5 shadow-lg group cursor-pointer">
+            <div className="col-span-1 row-span-1 relative rounded-[2rem] overflow-hidden border border-ink/5 shadow-lg group cursor-pointer bg-white">
               <img
-                src="https://images.unsplash.com/photo-1628178656627-ea65f3751a02?auto=format&fit=crop&q=80&w=600"
-                alt="EV Charging Station"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                src="https://www.smappee.com/app/uploads/2024/06/Base-white.png"
+                alt="Smappee EV Charging Station"
+                className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-700 ease-out"
                 referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent pointer-events-none" />
