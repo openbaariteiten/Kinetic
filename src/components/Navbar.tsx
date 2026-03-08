@@ -46,27 +46,32 @@ export const Navbar = ({ audience, setAudience }: { audience: 'commercial' | 'pr
               onClick={() => setAudience('commercial')}
               className={`px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all ${audience === 'commercial' ? 'bg-kinetic text-white shadow-[0_0_10px_rgba(223,180,36,0.3)]' : 'text-ink/50 hover:text-ink'}`}
             >
-              Commercial
+              Zakelijk
             </button>
             <button 
               onClick={() => setAudience('private')}
               className={`px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all ${audience === 'private' ? 'bg-kinetic text-white shadow-[0_0_10px_rgba(223,180,36,0.3)]' : 'text-ink/50 hover:text-ink'}`}
             >
-              Private
+              Particulier
             </button>
           </div>
 
-          {['Solutions', 'Sectors', 'About', 'Contact'].map((item) => (
+          {[
+            { tag: 'Diensten', id: 'solutions' },
+            { tag: 'Sectoren', id: 'sectors' },
+            { tag: 'Over Ons', id: 'about' },
+            { tag: 'Contact', id: 'contact' }
+          ].map((item) => (
             <a
-              key={item}
-              href={`#${item.toLowerCase()}`}
+              key={item.tag}
+              href={`#${item.id}`}
               className="text-sm font-medium text-ink/70 hover:text-kinetic transition-colors"
             >
-              {item}
+              {item.tag}
             </a>
           ))}
           <button className="bg-kinetic text-white px-5 py-2 rounded-full text-sm font-bold hover:bg-kinetic-dark transition-all hover:scale-105 active:scale-95 shadow-md shadow-kinetic/20">
-            Get Started
+            Start Project
           </button>
         </div>
 
@@ -88,28 +93,33 @@ export const Navbar = ({ audience, setAudience }: { audience: 'commercial' | 'pr
               onClick={() => { setAudience('commercial'); setIsOpen(false); }}
               className={`flex-1 py-2 rounded-lg text-sm font-bold uppercase tracking-wider transition-all ${audience === 'commercial' ? 'bg-kinetic text-white shadow-[0_0_10px_rgba(223,180,36,0.3)]' : 'text-ink/50 hover:text-ink'}`}
             >
-              Commercial
+              Zakelijk
             </button>
             <button 
               onClick={() => { setAudience('private'); setIsOpen(false); }}
               className={`flex-1 py-2 rounded-lg text-sm font-bold uppercase tracking-wider transition-all ${audience === 'private' ? 'bg-kinetic text-white shadow-[0_0_10px_rgba(223,180,36,0.3)]' : 'text-ink/50 hover:text-ink'}`}
             >
-              Private
+              Particulier
             </button>
           </div>
 
-          {['Solutions', 'Sectors', 'About', 'Contact'].map((item) => (
+          {[
+            { tag: 'Diensten', id: 'solutions' },
+            { tag: 'Sectoren', id: 'sectors' },
+            { tag: 'Over Ons', id: 'about' },
+            { tag: 'Contact', id: 'contact' }
+          ].map((item) => (
             <a
-              key={item}
-              href={`#${item.toLowerCase()}`}
+              key={item.tag}
+              href={`#${item.id}`}
               className="text-lg font-medium text-ink/70 hover:text-kinetic font-semibold"
               onClick={() => setIsOpen(false)}
             >
-              {item}
+              {item.tag}
             </a>
           ))}
           <button className="bg-kinetic text-white w-full py-3 rounded-xl font-bold hover:bg-kinetic-dark transition-all">
-            Get Started
+            Start Project
           </button>
         </motion.div>
       )}
