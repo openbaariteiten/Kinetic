@@ -75,19 +75,17 @@ export default function App() {
           <div className="absolute inset-0 bg-kinetic/10 blur-[120px] rounded-full -translate-y-1/2 animate-spin-slow origin-center" />
           <div className="max-w-7xl mx-auto px-6 relative z-10">
             <div className="glass p-12 md:p-24 rounded-[3rem] text-center border-kinetic/10 shadow-xl shadow-kinetic/5">
+              <div className="text-kinetic font-bold uppercase tracking-widest text-xs mb-4">Laatste Stap</div>
               <h2 className="text-5xl md:text-7xl font-bold tracking-tighter mb-8 leading-tight">
-                READY TO POWER THE <br />
-                <span className="text-kinetic glow-text italic">NEXT GENERATION?</span>
+                KLAAR VOOR DE <br />
+                <span className="text-kinetic glow-text italic">VOLGENDE STAP?</span>
               </h2>
-              <p className="text-xl text-ink/70 mb-10 shadow-sm">
-                Join forces with Cura Energy and lead the energy transition. Whether you're an industrial giant or a homeowner, we have the strategy for you.
+              <p className="text-xl text-ink/70 mb-10 shadow-sm max-w-2xl mx-auto">
+                Laat de regie van uw energie over aan de experts van Cura. Samen maken we de transitie rendabel en zorgeloos.
               </p>
               <div className="flex flex-wrap justify-center gap-6">
                 <button className="bg-kinetic text-white px-10 py-5 rounded-full font-bold text-lg hover:bg-kinetic-dark transition-all hover:scale-105 shadow-lg shadow-kinetic/20">
-                  Contact Our Experts
-                </button>
-                <button className="border border-ink/20 px-10 py-5 rounded-full font-bold text-lg hover:border-kinetic/50 hover:bg-kinetic/5 transition-all text-ink">
-                  View Case Studies
+                  Plan een strategisch adviesgesprek
                 </button>
               </div>
             </div>

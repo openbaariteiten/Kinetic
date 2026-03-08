@@ -27,24 +27,24 @@ export const About = () => {
           </div>
 
           <div className="order-last lg:order-first">
-            <div className="text-kinetic font-bold uppercase tracking-widest text-xs mb-4">Our Story</div>
+            <div className="text-kinetic font-bold uppercase tracking-widest text-xs mb-4">Onze Visie</div>
             <h2 className="text-5xl md:text-6xl font-bold tracking-tighter mb-8 leading-[0.9] text-ink">
-              EVOLVING INTO A <br />
-              <span className="text-kinetic glow-text italic">STRATEGIC PARTNER</span>
+              UW ENERGIE, <br />
+              <span className="text-kinetic glow-text italic">ONZE ZORG.</span>
             </h2>
             <p className="text-ink/70 text-lg leading-relaxed mb-6 font-medium">
-                Cura Energy is an ambitious, growing organisation active in the energy transition and infrastructure sector. We don't just install; we strategize, design, and maintain the energy systems of tomorrow.
-              </p>
-              <p className="text-ink/70 text-lg leading-relaxed font-medium">
-                Through our specialized network, we serve a diverse portfolio of clients. Our mission is to bridge the gap between traditional energy infrastructure and the sustainable future.
-              </p>
+              De wereld van hernieuwbare energie verandert snel. Waar anderen stoppen bij de installatie, begint het voor ons pas. Als uw strategische energiepartner kijken we naar het grotere geheel.
+            </p>
+            <p className="text-ink/70 text-lg leading-relaxed font-medium">
+              Wij integreren zonne-energie, batterijopslag en laadinfrastructuur tot één intelligent en renderend ecosysteem. <br/><br/><strong>Wij zijn geen leverancier van producten, maar een architect van oplossingen.</strong>
+            </p>
 
             <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-4">
               {[
-                "Strategic Energy Planning",
-                "Specialized Network",
-                "Full-Lifecycle Support",
-                "Innovation Driven"
+                "Geïntegreerde Oplossingen",
+                "Strategisch Advies",
+                "Toekomstbestendig Design",
+                "Proactief Beheer"
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-3 p-4 rounded-xl border border-ink/10 hover:border-kinetic/30 bg-white/40 hover:bg-white transition-colors group cursor-default shadow-sm">
                   <div className="w-2 h-2 rounded-full bg-kinetic" />

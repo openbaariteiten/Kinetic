@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { Factory, Home, Zap, BarChart3, Settings, ShieldCheck } from 'lucide-react';
 
-const SectorCard = ({ icon: Icon, title, description, items, isDark = false }: any) => (
+const ReasonCard = ({ icon: Icon, title, description, isDark = false }: any) => (
   <motion.div
     whileHover={{ y: -10, scale: 1.02 }}
     transition={{ type: "spring", stiffness: 300, damping: 20 }}
@@ -17,18 +17,10 @@ const SectorCard = ({ icon: Icon, title, description, items, isDark = false }: a
     }`}>
       <Icon size={28} />
     </div>
-    <h3 className="text-3xl font-bold mb-4 tracking-tight">{title}</h3>
-    <p className={`mb-8 leading-relaxed ${isDark ? 'text-ink/80' : 'text-ink/70'}`}>
+    <h3 className="text-2xl font-bold mb-4 tracking-tight">{title}</h3>
+    <p className={`leading-relaxed ${isDark ? 'text-ink/80' : 'text-ink/70'}`}>
       {description}
     </p>
-    <ul className="space-y-3">
-      {items.map((item: string, i: number) => (
-        <li key={i} className="flex items-center gap-3 text-sm font-medium">
-          <div className={`w-1.5 h-1.5 rounded-full ${isDark ? 'bg-kinetic-dark' : 'bg-kinetic'}`} />
-          {item}
-        </li>
-      ))}
-    </ul>
   </motion.div>
 );
 
@@ -38,56 +30,40 @@ export const Sectors = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col items-center text-center mb-16 gap-6">
           <div className="max-w-2xl">
-            <div className="text-kinetic font-bold uppercase tracking-widest text-xs mb-4">Market Focus</div>
+            <div className="text-kinetic font-bold uppercase tracking-widest text-xs mb-4">Waarom Cura?</div>
             <h2 className="text-5xl md:text-6xl font-bold tracking-tighter text-ink">
-              SERVING THE ENTIRE <br />
-              <span className="text-kinetic glow-text italic">ENERGY ECOSYSTEM</span>
+              UW ENERGIE IN <br />
+              <span className="text-kinetic glow-text italic">VERTROUWDE HANDEN</span>
             </h2>
           </div>
-          <p className="text-ink/60 max-w-lg font-medium">
-            From heavy industrial installations to residential smart homes, we provide the backbone for the energy transition.
-          </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
-          <SectorCard
-            icon={Factory}
-            title="B2B Industrial"
-            description="Strategic energy solutions for large-scale infrastructure and industrial complexes. We handle the complexity so you can focus on growth."
-            items={[
-              "Industrial Grid Connections",
-              "Infrastructure Power Systems",
-              "High-Voltage Installations",
-              "Energy Management Systems"
-            ]}
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <ReasonCard
+            icon={ShieldCheck}
+            title="Volledige Ontzorging"
+            description="Van eerste audit en subsidieaanvraag tot installatie en monitoring."
           />
-          <SectorCard
-            icon={Home}
-            title="B2C Residential"
-            description="Smart energy solutions for the modern home. We help homeowners transition to sustainable living with ease and efficiency."
+          <ReasonCard
+            icon={Settings}
+            title="Merkonafhankelijk Advies"
+            description="Wij kiezen de techniek die het beste past bij uw specifieke situatie."
             isDark={true}
-            items={[
-              "Solar PV & Storage",
-              "EV Charging Infrastructure",
-              "Smart Home Integration",
-              "Residential Energy Audits"
-            ]}
+          />
+          <ReasonCard
+            icon={Factory}
+            title="Eén Aanspreekpunt"
+            description="Geen gedoe met verschillende onderaannemers; één partner voor uw hele energie-as."
+          />
+          <ReasonCard
+            icon={BarChart3}
+            title="Toekomstbestendig"
+            description="Wij bouwen systemen die vandaag werken en morgen uitbreidbaar zijn."
+            isDark={true}
           />
         </div>
 
-        <div className="mt-24 grid grid-cols-2 md:grid-cols-4 gap-4">
-          {[
-            { icon: Zap, label: "Fast Deployment" },
-            { icon: BarChart3, label: "Data-Driven" },
-            { icon: Settings, label: "Custom Engineering" },
-            { icon: ShieldCheck, label: "Certified Safety" }
-          ].map((feature, i) => (
-            <div key={i} className="glass text-ink p-6 rounded-2xl flex flex-col items-center text-center gap-4 hover:border-kinetic/50 transition-colors shadow-sm">
-              <feature.icon className="text-kinetic" size={32} />
-              <span className="font-bold text-sm uppercase tracking-wider">{feature.label}</span>
-            </div>
-          ))}
-        </div>
+
       </div>
     </section>
   );

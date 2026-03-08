@@ -24,49 +24,42 @@ export const Hero = ({ audience }: { audience: 'commercial' | 'private' }) => {
         >
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-kinetic/30 bg-kinetic/10 text-kinetic-dark text-xs font-bold uppercase tracking-widest mb-6">
             <Zap size={14} />
-            {isPrivate ? "Power Your Home" : "The Future of Energy"}
+            {isPrivate ? "Comfort zonder Complexiteit" : "Infrastructuur voor de Toekomst"}
           </div>
           <h1 className="text-6xl md:text-8xl font-bold leading-[0.9] tracking-tighter mb-8">
-            {isPrivate ? (
-              <>
-                SMART ENERGY <br />
-                <span className="text-kinetic glow-text italic">FOR YOUR HOME</span>
-              </>
-            ) : (
-              <>
-                YOUR STRATEGIC <br />
-                <span className="text-kinetic glow-text italic">ENERGY PARTNER</span>
-              </>
-            )}
+            <>
+              STRATEGISCHE REGIE <br />
+              <span className="text-kinetic glow-text italic">OVER UW ENERGIE</span>
+            </>
           </h1>
           <p className="text-xl text-ink/70 max-w-lg mb-10 leading-relaxed font-medium">
             {isPrivate 
-              ? "Take control of your energy future. We design and install premium home battery systems, smart EV chargers, and solar solutions tailored for modern living."
-              : "Cura Energy is evolving from a traditional installer to a strategic partner in the energy transition. We empower industries and homes with sustainable infrastructure."}
+              ? "Een duurzaam huis hoeft niet ingewikkeld te zijn. Cura Energy brengt de expertise van de industriële sector naar uw voordeur. Wij nemen de regie van advies tot installatie."
+              : "Wij installeren niet alleen; wij beheren. Cura Energy is de full-service partner die de complexiteit van de energietransitie uit handen neemt voor bedrijven."}
           </p>
           
           <div className="flex flex-wrap gap-4">
             <button className="bg-kinetic text-white px-8 py-4 rounded-full font-bold flex items-center gap-2 hover:bg-kinetic-dark transition-all group shadow-lg shadow-kinetic/20">
-              {isPrivate ? "Get a Free Quote" : "Explore Solutions"}
+              {isPrivate ? "Cura voor uw woning" : "Ontdek onze zakelijke oplossingen"}
               <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
             </button>
             <button className="border border-ink/20 text-ink hover:border-kinetic/50 hover:bg-kinetic/5 px-8 py-4 rounded-full font-bold transition-all">
-              {isPrivate ? "View Home Products" : "Our Subsidiaries"}
+               Onze Diensten
             </button>
           </div>
 
           <div className="mt-16 grid grid-cols-3 gap-8 border-t border-ink/10 pt-8">
             <div>
               <div className="text-3xl font-bold text-ink mb-1">250+</div>
-              <div className="text-xs text-ink/50 uppercase tracking-wider font-semibold">Projects Delivered</div>
+              <div className="text-xs text-ink/50 uppercase tracking-wider font-semibold">Projecten Opgeleverd</div>
             </div>
             <div>
               <div className="text-3xl font-bold text-ink mb-1">15+</div>
-              <div className="text-xs text-ink/50 uppercase tracking-wider font-semibold">Years Experience</div>
+              <div className="text-xs text-ink/50 uppercase tracking-wider font-semibold">Jaren Ervaring</div>
             </div>
             <div>
               <div className="text-3xl font-bold text-ink mb-1">100%</div>
-              <div className="text-xs text-ink/50 uppercase tracking-wider font-semibold">Renewable Focus</div>
+              <div className="text-xs text-ink/50 uppercase tracking-wider font-semibold">Hernieuwbare Focus</div>
             </div>
           </div>
         </motion.div>
@@ -92,8 +85,8 @@ export const Hero = ({ audience }: { audience: 'commercial' | 'private' }) => {
                   <Shield size={24} />
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg text-ink">Reliable Infrastructure</h3>
-                  <p className="text-sm text-ink/70">Built for the next generation.</p>
+                  <h3 className="font-bold text-lg text-ink">Betrouwbare Infrastructuur</h3>
+                  <p className="text-sm text-ink/70">Gebouwd voor de volgende generatie.</p>
                 </div>
               </div>
             </div>

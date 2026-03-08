@@ -32,40 +32,31 @@ export const Subsidiaries = () => {
           viewport={{ once: true }}
           className="text-center mb-16 text-ink"
         >
-          <div className="text-kinetic font-bold uppercase tracking-widest text-xs mb-4">Our Network</div>
+          <div className="text-kinetic font-bold uppercase tracking-widest text-xs mb-4">Onze Diensten</div>
           <h2 className="text-5xl md:text-6xl font-bold tracking-tighter mb-6">
-            THE POWER OF <br />
-            <span className="text-kinetic glow-text italic">SPECIALIZATION</span>
+            DE DRIE PIJLERS VAN <br />
+            <span className="text-kinetic glow-text italic">CURA ENERGY</span>
           </h2>
-          <p className="text-ink/60 max-w-2xl mx-auto font-medium">
-            Cura Energy operates through a network of specialized entities, each a leader in their respective niche of the energy sector.
-          </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-3 gap-6">
           <Subsidiary 
-            icon={Building2} 
-            name="Cura Infra" 
-            description="Large-scale renewable infrastructure and commercial energy systems."
+            icon={Sun} 
+            name="Zonne-energie (Opwek)" 
+            description="Wij ontwerpen en realiseren grootschalige industriële installaties en residentiële systemen met een maximaal rendement."
             delay={0.1}
-          />
-          <Subsidiary
-            name="Cura Solar"
-            description="Leading the transition with advanced solar PV systems for residential and commercial markets."
-            icon={Sun}
-            delay={0.2}
           />
           <Subsidiary 
             icon={Battery} 
-            name="Cura Batteries" 
-            description="Industrial-scale energy storage and grid balancing."
-            delay={0.3}
+            name="Batterijsystemen (Opslag)" 
+            description="Optimaliseer uw verbruik. Wij beheren de opslag van uw zelfopgewekte energie voor momenten dat de zon niet schijnt."
+            delay={0.2}
           />
           <Subsidiary 
-            icon={Cpu} 
-            name="Cura Intelligence" 
-            description="Smart grid software and energy management systems."
-            delay={0.4}
+            icon={Zap} 
+            name="Laadinfrastructuur (Mobiliteit)" 
+            description="Slimme laadoplossingen voor uw wagenpark of oprit, volledig geïntegreerd met uw energiebeheer."
+            delay={0.3}
           />
         </div>
       </div>
