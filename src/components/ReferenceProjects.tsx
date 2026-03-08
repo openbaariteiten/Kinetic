@@ -5,50 +5,50 @@ import { ArrowUpRight, Zap, Sun, Battery, Network, Factory, Home } from 'lucide-
 const projects = [
   {
     title: "Libeert Chocolade",
-    category: "Industrial",
+    category: "Industrieel",
     icon: Factory,
-    description: "Large-scale industrial solar installation for the renowned chocolate manufacturer, optimizing production energy costs.",
-    stats: { value: "450kWp", label: "Capacity" },
+    description: "Grootschalige industriële zonne-installatie voor de bekende chocoladefabrikant, gericht op het optimaliseren van de energiekosten voor productie.",
+    stats: { value: "450kWp", label: "Capaciteit" },
     image: "https://www.batimont.be/sites/default/files/references/2025-10/Battery4Industry-8.jpg"
   },
   {
     title: "Vives Hogeschool",
-    category: "Commercial",
+    category: "Commercieel",
     icon: Network,
-    description: "Comprehensive solar power system for the Brugge campus, supporting sustainable education and campus operations.",
-    stats: { value: "150kWp", label: "Capacity" },
+    description: "Uitgebreid zonne-energiesysteem voor de campus in Brugge ter ondersteuning van duurzaam onderwijs en campusbeheer.",
+    stats: { value: "150kWp", label: "Capaciteit" },
     image: "https://www.batimont.be/sites/default/files/references/2024-09/6-min.jpg"
   },
   {
     title: "Top-Mix Recycling",
-    category: "Infrastructure",
+    category: "Infrastructuur",
     icon: Zap,
-    description: "Powering the circular economy with a massive solar array at the Oostende recycling facility.",
-    stats: { value: "1.2MWp", label: "Capacity" },
+    description: "Aandrijving van de circulaire economie met een gigantisch zonnepark op de recyclingfaciliteit in Oostende.",
+    stats: { value: "1.2MWp", label: "Capaciteit" },
     image: "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&q=80&w=800"
   },
   {
     title: "Valcke Industriebouw",
-    category: "Industrial",
+    category: "Industrieel",
     icon: Factory,
-    description: "Strategic energy partnership for an industrial construction leader, featuring high-efficiency panel arrays.",
-    stats: { value: "800kWp", label: "Capacity" },
+    description: "Strategisch energiepartnerschap voor een marktleider in industriebouw, met zeer efficiënte zonnepanelen.",
+    stats: { value: "800kWp", label: "Capaciteit" },
     image: "https://www.batimont.be/sites/default/files/references/2024-09/Batimont%20Valcke%20Ieper-5-min.jpg"
   },
   {
     title: "Axitec Battery Storage",
-    category: "Residential",
+    category: "Residentieel",
     icon: Battery,
-    description: "Advanced 20kWh battery storage system providing energy independence and backup for modern homes.",
-    stats: { value: "20kWh", label: "Storage" },
+    description: "Geavanceerd 20kWh batterijopslagsysteem voor energieonafhankelijkheid en back-upstroom in moderne woningen.",
+    stats: { value: "20kWh", label: "Opslag" },
     image: "https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?auto=format&fit=crop&q=80&w=800"
   },
   {
     title: "Full Black PV Brugge",
-    category: "Residential",
+    category: "Residentieel",
     icon: Home,
-    description: "Aesthetic high-performance solar installation for residential properties in the historic city of Brugge.",
-    stats: { value: "12kWp", label: "Capacity" },
+    description: "Esthetische hoogrendementsinstallatie voor residentiële woningen in de historische binnenstad van Brugge.",
+    stats: { value: "12kWp", label: "Capaciteit" },
     image: "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&q=80&w=800"
   }
 ];
@@ -66,12 +66,12 @@ export const ReferenceProjects = () => {
           <div className="max-w-2xl">
             <div className="text-kinetic font-bold uppercase tracking-widest text-xs mb-4">Portfolio</div>
             <h2 className="text-5xl md:text-6xl font-bold tracking-tighter text-ink">
-              REFERENCE <br />
-              <span className="text-kinetic glow-text italic">PROJECTS</span>
+              REFERENTIE <br />
+              <span className="text-kinetic glow-text italic">PROJECTEN</span>
             </h2>
           </div>
           <button className="group flex items-center gap-2 text-kinetic font-bold uppercase tracking-widest text-sm hover:text-kinetic-dark transition-colors border border-kinetic/20 rounded-full px-6 py-2 hover:bg-kinetic/5">
-            View All Projects
+            Bekijk Alle Projecten
             <ArrowUpRight size={16} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
           </button>
         </motion.div>
