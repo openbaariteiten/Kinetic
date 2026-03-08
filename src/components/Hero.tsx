@@ -32,7 +32,7 @@ export const Hero = ({ audience }: { audience: 'commercial' | 'private' }) => {
           </h1>
           <p className="text-xl text-ink/70 max-w-lg mb-10 leading-relaxed font-medium">
             {isPrivate 
-              ? "Een duurzaam huis hoeft niet ingewikkeld te zijn. Cura Energy brengt de expertise van de industriële sector naar uw voordeur. Wij nemen de regie van advies tot installatie."
+              ? "Een duurzaam huis hoeft niet ingewikkeld te zijn. Cura Energy brengt de expertise van de industriële sector naar uw voordeur. Wij nemen het beheer van advies tot installatie."
               : "Wij installeren niet alleen; wij beheren. Cura Energy is de full-service partner die de complexiteit van de energietransitie uit handen neemt voor bedrijven."}
           </p>
           
