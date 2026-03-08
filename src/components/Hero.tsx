@@ -86,9 +86,12 @@ export const Hero = ({ audience }: { audience: 'commercial' | 'private' }) => {
             </div>
 
             {/* Bottom Left Block: Battery */}
-            <div className="col-span-1 row-span-1 relative rounded-[2rem] overflow-hidden border border-ink/5 shadow-lg group cursor-pointer bg-white">
+            <div className="col-span-1 row-span-1 relative rounded-[2rem] overflow-hidden border border-ink/5 shadow-lg group cursor-pointer">
               <img
-                src="https://microgreen.ca/images/containerized-energy-storage.png"
+                src={isPrivate 
+                  ? "https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?auto=format&fit=crop&q=80&w=600" 
+                  : "https://www.energy-storage.news/wp-content/uploads/2024/04/image-1-4.jpg"
+                }
                 alt="Battery Storage"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                 referrerPolicy="no-referrer"
