@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { ArrowRight, Zap, Shield, Globe } from 'lucide-react';
+import { ArrowRight, Zap, Shield, Sun, Battery, Plug, CheckCircle2 } from 'lucide-react';
 
 export const Hero = ({ audience }: { audience: 'commercial' | 'private' }) => {
   const isPrivate = audience === 'private';
@@ -26,11 +26,9 @@ export const Hero = ({ audience }: { audience: 'commercial' | 'private' }) => {
             <Zap size={14} />
             {isPrivate ? "Comfort zonder Complexiteit" : "Infrastructuur voor de Toekomst"}
           </div>
-          <h1 className="text-6xl md:text-8xl font-bold leading-[0.9] tracking-tighter mb-8">
-            <>
-              STRATEGISCHE REGIE <br />
-              <span className="text-kinetic glow-text italic">OVER UW ENERGIE</span>
-            </>
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.9] tracking-tighter mb-8">
+            EÉN PARTNER VOOR <br />
+            <span className="text-kinetic glow-text italic">ZON, OPSLAG EN LADEN</span>
           </h1>
           <p className="text-xl text-ink/70 max-w-lg mb-10 leading-relaxed font-medium">
             {isPrivate 
@@ -70,30 +68,56 @@ export const Hero = ({ audience }: { audience: 'commercial' | 'private' }) => {
             transition={{ duration: 1, delay: 0.2 }}
             className="relative order-first lg:order-first"
           >
-          <div className="relative aspect-square rounded-[3rem] overflow-hidden border border-ink/5 shadow-2xl group cursor-pointer">
-              <img
-              src="https://images.unsplash.com/photo-1592833159155-c62df1b65634?auto=format&fit=crop&q=80&w=1000"
-              alt="Solar Panel Installation"
-              className="w-full h-full object-cover grayscale-0 group-hover:scale-105 transition-transform duration-700 ease-out"
-              referrerPolicy="no-referrer"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-transparent to-transparent group-hover:from-ink transition-colors duration-700 pointer-events-none" />
+          <div className="grid grid-cols-2 grid-rows-2 gap-4 h-[500px] lg:h-[600px] w-full">
             
-            <div className="absolute bottom-8 left-8 right-8 bg-white/90 backdrop-blur-md p-6 rounded-2xl border border-white shadow-xl group-hover:-translate-y-2 transition-transform duration-500">
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-kinetic flex items-center justify-center text-white shadow-md shadow-kinetic/30">
-                  <Shield size={24} />
-                </div>
-                <div>
-                  <h3 className="font-bold text-lg text-ink">Betrouwbare Infrastructuur</h3>
-                  <p className="text-sm text-ink/70">Gebouwd voor de volgende generatie.</p>
-                </div>
+            {/* Top Block: Solar (Spans 2 columns) */}
+            <div className="col-span-2 row-span-1 relative rounded-[2rem] overflow-hidden border border-ink/5 shadow-lg group cursor-pointer">
+              <img
+                src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&q=80&w=1200"
+                alt="Solar Installation"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                referrerPolicy="no-referrer"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent pointer-events-none" />
+              <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-md px-4 py-2 rounded-xl flex items-center gap-2 shadow-md">
+                <Sun size={18} className="text-kinetic" />
+                <span className="font-bold text-sm text-ink group-hover:text-kinetic transition-colors">Zonne-energie</span>
               </div>
             </div>
-            
-            {/* Decorative Elements */}
-            <div className="absolute -top-6 -right-6 w-32 h-32 border-t-2 border-r-2 border-kinetic/30 rounded-tr-[3rem] -z-10 group-hover:translate-x-2 group-hover:-translate-y-2 transition-transform duration-700" />
-            <div className="absolute -bottom-6 -left-6 w-32 h-32 border-b-2 border-l-2 border-kinetic/30 rounded-bl-[3rem] -z-10 group-hover:-translate-x-2 group-hover:translate-y-2 transition-transform duration-700" />
+
+            {/* Bottom Left Block: Battery */}
+            <div className="col-span-1 row-span-1 relative rounded-[2rem] overflow-hidden border border-ink/5 shadow-lg group cursor-pointer">
+              <img
+                src="https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?auto=format&fit=crop&q=80&w=600"
+                alt="Battery Storage"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                referrerPolicy="no-referrer"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent pointer-events-none" />
+              <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-md px-4 py-2 rounded-xl flex items-center gap-2 shadow-md">
+                <Battery size={18} className="text-kinetic" />
+                <span className="font-bold text-sm text-ink group-hover:text-kinetic transition-colors">Opslag</span>
+              </div>
+            </div>
+
+            {/* Bottom Right Block: EV Charging */}
+            <div className="col-span-1 row-span-1 relative rounded-[2rem] overflow-hidden border border-ink/5 shadow-lg group cursor-pointer">
+              <img
+                src="https://images.unsplash.com/photo-1628178656627-ea65f3751a02?auto=format&fit=crop&q=80&w=600"
+                alt="EV Charging Station"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                referrerPolicy="no-referrer"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent pointer-events-none" />
+              <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-md px-4 py-2 rounded-xl flex items-center gap-2 shadow-md">
+                <Plug size={18} className="text-kinetic" />
+                <span className="font-bold text-sm text-ink group-hover:text-kinetic transition-colors">Laden</span>
+              </div>
+            </div>
+
+            {/* Decorative Corner Element */}
+            <div className="absolute -top-6 -right-6 w-32 h-32 border-t-2 border-r-2 border-kinetic/30 rounded-tr-[2rem] -z-10" />
+            <div className="absolute -bottom-6 -left-6 w-32 h-32 border-b-2 border-l-2 border-kinetic/30 rounded-bl-[2rem] -z-10" />
           </div>
           </motion.div>
       </div>
