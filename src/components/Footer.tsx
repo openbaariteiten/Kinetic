@@ -9,9 +9,9 @@ export const Footer = () => {
           <div className="lg:col-span-1">
             <a href="#" className="flex items-center gap-2">
               <img 
-                src="/omni_logo.jpg" 
+                src="/omni_logo.png" 
                 alt="OMNI Logo" 
-                className="h-10 w-auto mix-blend-multiply" 
+                className="h-10 w-auto" 
               />
             </a>
             <p className="mt-6 text-ink/60 leading-relaxed font-medium">

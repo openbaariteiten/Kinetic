@@ -31,9 +31,9 @@ export const Navbar = ({ audience, setAudience }: { audience: 'commercial' | 'pr
         <div className="flex-shrink-0 flex items-center">
           <a href="#" className="flex items-center gap-3 group">
             <img 
-              src="/omni_logo.jpg" 
+              src="/omni_logo.png" 
               alt="OMNI Logo" 
-              className="h-10 w-auto mix-blend-multiply transition-transform group-hover:scale-105" 
+              className="h-10 w-auto transition-transform group-hover:scale-105" 
             />
             <span className="font-[system-ui,-apple-system,sans-serif] font-black text-2xl tracking-tighter text-[#1A365D] uppercase mt-1">
               OMNI
