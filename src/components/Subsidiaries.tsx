@@ -11,8 +11,8 @@ const Subsidiary = ({ name, description, imageSrc, delay }: any) => (
     className="group p-8 glass rounded-3xl hover:border-kinetic/50 transition-all cursor-pointer h-full text-ink flex flex-col"
   >
     <div className="flex items-center justify-between mb-6">
-      <div className="h-14 flex items-center justify-center">
-        <img src={imageSrc} alt={`${name} logo`} className="h-full w-auto object-contain mix-blend-multiply group-hover:scale-105 transition-transform" />
+      <div className="h-24 flex items-center justify-center">
+        <img src={imageSrc} alt={`${name} logo`} className="h-full w-auto object-contain group-hover:scale-105 transition-transform" />
       </div>
     </div>
     <h3 className="text-2xl font-bold mb-3 tracking-tight">{name}</h3>
@@ -41,19 +41,19 @@ export const Subsidiaries = () => {
 
         <div className="grid md:grid-cols-3 gap-6">
           <Subsidiary 
-            imageSrc="/Omni_solar.jpg" 
+            imageSrc="/Omni_solar.png" 
             name="Zonne-energie (Opwek)" 
             description="Wij ontwerpen en realiseren grootschalige industriële installaties en residentiële systemen met een maximaal rendement."
             delay={0.1}
           />
           <Subsidiary 
-            imageSrc="/Omni_storage.jpg" 
+            imageSrc="/Omni_storage.png" 
             name="Batterijsystemen (Opslag)" 
             description="Optimaliseer uw verbruik. Wij beheren de opslag van uw zelfopgewekte energie voor momenten dat de zon niet schijnt."
             delay={0.2}
           />
           <Subsidiary 
-            imageSrc="/Omni_charging.jpg" 
+            imageSrc="/Omni_charging.png" 
             name="Laadinfrastructuur (Mobiliteit)" 
             description="Slimme laadoplossingen voor uw wagenpark of oprit, volledig geïntegreerd met uw energiebeheer."
             delay={0.3}
