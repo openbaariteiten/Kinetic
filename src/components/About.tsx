@@ -18,7 +18,7 @@ export const About = () => {
               <div className="absolute -bottom-10 -right-10 w-64 h-64 bg-kinetic rounded-[3rem] p-8 flex flex-col justify-between text-white hidden md:flex shadow-2xl shadow-kinetic/20">
               <div className="text-5xl font-bold tracking-tighter italic">15+</div>
               <div>
-                <div className="font-bold text-xl mb-1">Jaren Evolutie</div>
+                <div className="font-bold text-xl mb-1">Jaar ervaring</div>
                 <p className="text-sm font-medium opacity-90 leading-tight text-white/90">
                   Van traditionele installateurs tot strategische energiepartners.
                 </p>
