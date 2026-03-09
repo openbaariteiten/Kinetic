@@ -39,6 +39,24 @@ export const Sectors = () => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {/* New Image Tile (Span 2 columns on lg screens) */}
+          <motion.div
+            whileHover={{ y: -5 }}
+            transition={{ type: "spring", stiffness: 300, damping: 20 }}
+            className="lg:col-span-2 md:col-span-2 row-span-1 rounded-3xl overflow-hidden relative shadow-md group"
+          >
+            <img 
+              src="/OMNI_installer.png" 
+              alt="OMNI Installer at work" 
+              className="w-full h-full object-cover min-h-[300px] transition-transform duration-700 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/20 to-transparent"></div>
+            <div className="absolute bottom-6 left-6 right-6 text-white text-left">
+              <h3 className="text-2xl font-bold mb-2">Vakmanschap in de praktijk</h3>
+              <p className="text-white/80 font-medium leading-relaxed">Onze eigen opgeleide installateurs garanderen een feilloze oplevering en veiligheid op elke site.</p>
+            </div>
+          </motion.div>
+
           <ReasonCard
             icon={ShieldCheck}
             title="Volledige Ontzorging"

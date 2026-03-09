@@ -6,6 +6,7 @@ import { Sectors } from './components/Sectors';
 import { About } from './components/About';
 import { Subsidiaries } from './components/Subsidiaries';
 import { ReferenceProjects } from './components/ReferenceProjects';
+import { Team } from './components/Team';
 import { Footer } from './components/Footer';
 
 export default function App() {
@@ -93,6 +94,8 @@ export default function App() {
         </section>
 
         <About />
+
+        <Team />
       </main>
 
       <Footer />
