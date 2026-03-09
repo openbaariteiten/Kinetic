@@ -35,7 +35,7 @@ export const Subsidiaries = () => {
           <div className="text-kinetic font-bold uppercase tracking-widest text-xs mb-4">Onze Diensten</div>
           <h2 className="text-5xl md:text-6xl font-bold tracking-tighter mb-6">
             DE DRIE PIJLERS VAN <br />
-            <span className="text-kinetic glow-text italic">OMNIS</span>
+            <span className="text-kinetic glow-text italic">OMNI</span>
           </h2>
         </motion.div>
 

@@ -30,7 +30,7 @@ export const Sectors = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col items-center text-center mb-16 gap-6">
           <div className="max-w-2xl">
-            <div className="text-kinetic font-bold uppercase tracking-widest text-xs mb-4">Waarom Omnis?</div>
+            <div className="text-kinetic font-bold uppercase tracking-widest text-xs mb-4">Waarom OMNI?</div>
             <h2 className="text-5xl md:text-6xl font-bold tracking-tighter text-ink">
               UW ENERGIE IN <br />
               <span className="text-kinetic glow-text italic">VERTROUWDE HANDEN</span>
