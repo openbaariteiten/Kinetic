@@ -10,7 +10,7 @@ export const About = () => {
           <div className="relative order-first lg:order-last">
             <div className="aspect-[4/3] rounded-3xl overflow-hidden glass p-2">
               <img
-                src="/OMNI_installer.png"
+                src="/OMNI_installers2.jpg"
                 alt="OMNI Installation"
                 className="w-full h-full object-cover rounded-2xl grayscale-0"
               />
