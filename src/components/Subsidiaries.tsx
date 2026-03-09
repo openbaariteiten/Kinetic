@@ -2,17 +2,17 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { Shield, Zap, Cpu, Network, Battery, Sun, Brain, Building2 } from 'lucide-react';
 
-const Subsidiary = ({ name, description, icon: Icon, delay }: any) => (
+const Subsidiary = ({ name, description, imageSrc, delay }: any) => (
   <motion.div 
     initial={{ opacity: 0, y: 30 }}
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true, margin: "-100px" }}
     transition={{ duration: 0.5, delay }}
-    className="group p-8 glass rounded-3xl hover:border-kinetic/50 transition-all cursor-pointer h-full text-ink"
+    className="group p-8 glass rounded-3xl hover:border-kinetic/50 transition-all cursor-pointer h-full text-ink flex flex-col"
   >
     <div className="flex items-center justify-between mb-6">
-      <div className="w-12 h-12 rounded-xl bg-kinetic/10 flex items-center justify-center text-kinetic group-hover:bg-kinetic group-hover:text-white transition-all shadow-sm">
-        <Icon size={24} />
+      <div className="h-14 flex items-center justify-center">
+        <img src={imageSrc} alt={`${name} logo`} className="h-full w-auto object-contain mix-blend-multiply group-hover:scale-105 transition-transform" />
       </div>
     </div>
     <h3 className="text-2xl font-bold mb-3 tracking-tight">{name}</h3>
@@ -41,19 +41,19 @@ export const Subsidiaries = () => {
 
         <div className="grid md:grid-cols-3 gap-6">
           <Subsidiary 
-            icon={Sun} 
+            imageSrc="/Omni_solar.jpg" 
             name="Zonne-energie (Opwek)" 
             description="Wij ontwerpen en realiseren grootschalige industriële installaties en residentiële systemen met een maximaal rendement."
             delay={0.1}
           />
           <Subsidiary 
-            icon={Battery} 
+            imageSrc="/Omni_storage.jpg" 
             name="Batterijsystemen (Opslag)" 
             description="Optimaliseer uw verbruik. Wij beheren de opslag van uw zelfopgewekte energie voor momenten dat de zon niet schijnt."
             delay={0.2}
           />
           <Subsidiary 
-            icon={Zap} 
+            imageSrc="/Omni_charging.jpg" 
             name="Laadinfrastructuur (Mobiliteit)" 
             description="Slimme laadoplossingen voor uw wagenpark of oprit, volledig geïntegreerd met uw energiebeheer."
             delay={0.3}
