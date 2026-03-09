@@ -35,9 +35,6 @@ export const Navbar = ({ audience, setAudience }: { audience: 'commercial' | 'pr
               alt="OMNI Logo" 
               className="h-10 w-auto transition-transform group-hover:scale-105" 
             />
-            <span className="font-[system-ui,-apple-system,sans-serif] font-black text-2xl tracking-tighter text-[#1A365D] uppercase mt-1">
-              OMNI
-            </span>
           </a>
         </div>
         
